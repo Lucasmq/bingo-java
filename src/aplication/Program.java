@@ -19,18 +19,18 @@ public class Program {
 		Cesta cesta = new Cesta(qtePedras);
 		Tabela tab = new Tabela(qtePedras);
 		
-		cesta.Iniciar();
+		cesta.Iniciar(); // inicia a cesta com as pedras
 		
 		while(!cesta.cestaEstaVazia()) {
 			
-			for (int i = 0; i < 50; ++i) System.out.println();
-			Pedra pedraRetirada = cesta.retirarPedra();
+			for (int i = 0; i < 50; ++i) System.out.println(); 					      // para limpar o console
+			Pedra pedraRetirada = cesta.retirarPedra();							      // pedra retirada para ser marcada
 			System.out.println("Pedra Chamada: " + pedraRetirada.getPedra());
-			tab.PreencherTabela(pedraRetirada);
-			tab.impimeTela(cesta);
-			//System.out.println("Pedras Restantes: " + cesta.PedrasRestantes + "\t\tQuantidades de Pedras Chamadas: " + cesta.qtePedrasChamadas());
+			tab.PreencherTabela(pedraRetirada);  									 // adiciona a pedra retirada a tabela
+			tab.impimeTela(cesta);													 // imprime na tela as pedras já chamadas
+			
 			sc.nextLine();
-			//System.out.println(pedraRetirada.getPedra());			
+				
 		}
 
 		sc.close();
