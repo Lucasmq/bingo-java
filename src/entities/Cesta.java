@@ -39,6 +39,10 @@ public class Cesta {
 		return PedrasRestantes;
 	}
 	
+	public int qtePedrasChamadas() {
+		return QtePedras - pedrasRestantes();
+	}
+	
 	public Pedra retirarPedra() {		
 		Pedra pedraRetirada =  Pedras.get(pedraAleatoria());
 		Pedras.remove(pedraRetirada);
