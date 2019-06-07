@@ -16,8 +16,8 @@ public class Program {
 		
 		int qtePedras = sc.nextInt();
 		sc.nextLine();
-		Cesta cesta = new Cesta(qtePedras);
-		Tabela tab = new Tabela(qtePedras);
+		Cesta cesta = new Cesta(qtePedras); // cria uma nova cesta com a quantidade de pedras declaradas
+		Tabela tab = new Tabela(qtePedras);	// cria uma tabela com a quantidade de pedras declaradas
 		
 		cesta.Iniciar(); // inicia a cesta com as pedras
 		
